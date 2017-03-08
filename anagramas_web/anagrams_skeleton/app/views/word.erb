@@ -1,0 +1,11 @@
+<h1>Find Anagrams!</h1>
+
+<% if @new_word %>
+  <p>Estos son anagramas para '<%= @new_word %>':</p>
+
+  <p><% @new_array_canonicals.each do |w| %></p>
+  <p><%= w.word %><p>
+  <% end %>
+<% end %>
+
+
